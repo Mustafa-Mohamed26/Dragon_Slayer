@@ -229,7 +229,7 @@ dragon_3_alife = True
 dragon_4_Health = HealthBar(enemyX[4], enemyY[4] + 75, 250, 10, 100)
 dragon_4_Health.hp = 100
 dragon_4_alife = True
-boss_Health = HealthBar(bossX, bossY + 225, 250, 10, 200)
+boss_Health = HealthBar(bossX, bossY + 275, 250, 10, 200)
 boss_Health.hp = 200
 boss_alife = True
 
