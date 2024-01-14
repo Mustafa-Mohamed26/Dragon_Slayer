@@ -1023,7 +1023,7 @@ while True:
                 dragon_4_Health.hp -= 25
             screen.blit(enemyImg[4], (enemyX[4], enemyY[4]))
             dragon_4_Health.x = enemyX[4]
-            dragon_4_Health.y = enemyY[3] + 150
+            dragon_4_Health.y = enemyY[4] + 150
             dragon_4_Health.draw(screen)
 
             # dragon 4 shoot
@@ -1161,7 +1161,7 @@ while True:
                 boss_Health.hp -= 25
             screen.blit(bossImg, (bossX, bossY))
             boss_Health.x = bossX
-            boss_Health.y = bossY + 150
+            boss_Health.y = bossY + 200
             boss_Health.draw(screen)
 
             # boss
@@ -1306,7 +1306,7 @@ while True:
             fire_Wizard(wizard_Fire_ImgX, wizard_Fire_ImgY)
             wizard_Fire_ImgX += wizard_Fire_Img_ChangeX
 
-        if health_count == 0:
+        if health_count <= 0:
             game_over_text()
         if boss_alife == False:
             Winner()
